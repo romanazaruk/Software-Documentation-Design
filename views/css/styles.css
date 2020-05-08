@@ -1,0 +1,124 @@
+body {
+  background: black;
+  color:white;
+  font-family: Lato, sans-serif;
+}
+.container {
+  margin-left: 100px;
+  display: block;
+  margin: 0 auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li,
+h3 {
+  clear: both;
+  list-style: none;
+}
+input,
+button {
+  outline: none;
+}
+button {
+  background-color:grey;
+  border: 3px;
+  border-radius: 10%;
+  color: white;
+  font-size: 25px;
+  width: 100px;
+  margin: 50px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  color: #333;
+}
+
+h3,
+label[for="new-task"] {
+  color: blue;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+input[type="text"]:focus {
+  color: #333;
+}
+
+label[for="new-task"] {
+  display: block;
+  margin: 0 0 20px;
+}
+
+li {
+  overflow: hidden;
+  padding: 20px 0;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+li > input[type="text"] {
+  width: 226px;
+}
+li > .delete:hover {
+  color: #cf2323;
+}
+
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+ul li input[type="text"] {
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: block;
+}
+
+ul li.editMode label {
+  display: none;
+}
+
+/* MY STYLES */
+.user-item {
+  display: block;
+  background: #efefef;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.add-task__input {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.add-task__label {
+  min-width: 120px;
+}
